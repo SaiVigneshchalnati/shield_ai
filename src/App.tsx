@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Shield, Send, Bot, User, Loader2 } from 'lucide-react';
+import { Shield, Send, Bot, User, ShieldEllipsis } from 'lucide-react';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import ReactMarkdown from 'react-markdown';
 
@@ -106,7 +106,7 @@ function App() {
               <div className="flex gap-3 mb-4 message-animation">
                 <Bot className="h-8 w-8 text-white hover-scale" />
                 <div className="bg-zinc-800 rounded-lg p-4">
-                  <Loader2 className="h-6 w-6 animate-spin text-white typing-indicator" />
+                  <ShieldEllipsis className="h-6 w-6 animate-spin text-white typing-indicator" />
                 </div>
               </div>
             )}
